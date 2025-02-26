@@ -131,6 +131,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
+STATICFILES_DIRS=[BASE_DIR/"static"]
+
+MEDIA_URL="/media/"
+MEDIA_ROOT=BASE_DIR/"media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -146,5 +150,5 @@ LOGIN_REDIRECT_URL = "/"
 LOGOUT_URL = "logout"
 LOGOUT_REDIRECT_URL = "/"
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = ""
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = ""
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = "712683876861-qtrcgsaq65gdemi8a8f02bg29440vfqv.apps.googleusercontent.com"
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "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"
