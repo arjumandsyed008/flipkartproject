@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}FlipKart|Add Address{% endblock %}
+{% block body %}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card-header bg-danger text-center" >
+                <h3>Add New Address</h3>
+            </div>
+            <div class="card-body p-4">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        {{form.mobile}}
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>Address</label>
+                        {{form.address}}
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>Pincode</label>
+                        {{form.pincode}}
+                    </div>
+                    <br>
+                    <input type="submit" class="btn btn-primary" value="Save Address">
+                </form>
+
+            </div>
+        </div>
+        <div class="text-center mt-3 ">
+            <a class="btn btn-success" href="/showaddress">View All Saved Address</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

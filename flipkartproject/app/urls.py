@@ -23,5 +23,9 @@ urlpatterns = [
     path('sortingbyprice/',views.sortingbyprice,name='sortingbyprice'),
     path('searchproduct/',views.searchproduct,name="searchproduct"),
     path('showcarts/',views.showcarts,name='showcarts'),
-    path('addtocart/<productid>',views.addtocart,name='addtocart')
+    path('addtocart/<productid>',views.addtocart,name='addtocart'),
+    path('removecart/<productid>/',views.removecart,name='removecart'),
+    path('upadeteqty/<int:qv>/<productid>/',views.upadeteqty,name='upadeteqty'),
+    path('addaddress/',views.addaddress,name='addaddress'),
+    path('showaddress/',views.showaddress,name='showaddress')
 ]
